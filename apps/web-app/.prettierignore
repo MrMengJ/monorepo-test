@@ -1,0 +1,16 @@
+**/*.svg
+package.json
+.next
+/dist
+.DS_Store
+.idea
+.eslintignore
+*.png
+.editorconfig
+.gitignore
+.prettierignore
+LICENSE
+.eslintcache
+CNAME
+/build
+/public
