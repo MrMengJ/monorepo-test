@@ -1,6 +1,6 @@
 const rules = {
-  '*.{js,jsx,ts,tsx}': ['prettier --write', 'eslint --fix', 'git add'],
-  '*.{json,css,scss,md}': ['prettier --write', 'git add'],
+  '*.{js,jsx,ts,tsx}': ['prettier --write', 'eslint --fix'],
+  '*.{json,css,scss,md}': ['prettier --write'],
 };
 
 module.exports = rules;
