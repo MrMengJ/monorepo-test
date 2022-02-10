@@ -2,7 +2,7 @@ import { Button, Result } from 'antd';
 import React from 'react';
 
 function backToHome() {
-  console.log('返回首页');
+  console.log('返回首页===');
 }
 
 const NoFoundPage = () => (
