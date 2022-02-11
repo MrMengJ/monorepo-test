@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +13,28 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/*
+*
+* override ant-design style
+*
+*/
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+.ant-pro-basicLayout {
+  height: 100%;
+}
+.ant-layout-content.ant-pro-basicLayout-content {
+  flex-basis: 0;
+}
+
+/*TODO 更改折叠后的菜单项 tooltip 文字和图标颜色，待官方修复后将此样式设置移除*/
+/*https://github.com/ant-design/ant-design-pro/issues/9404*/
+.ant-menu-inline-collapsed-tooltip .ant-tooltip-inner a {
+  color: #fff;
 }
