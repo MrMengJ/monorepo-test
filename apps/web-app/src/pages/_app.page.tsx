@@ -2,7 +2,6 @@ import React from 'react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import dynamic from 'next/dynamic';
-import 'antd/dist/antd.css';
 import '../styles/globals.css';
 
 // 必须这样导入，不然会报 "Cannot use import statement outside a module", see https://github.com/vercel/next.js/issues/32445#issuecomment-993746962
