@@ -11,19 +11,23 @@ const ProLayout = dynamic(() => import('@ant-design/pro-layout'), { ssr: false }
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={{ PRIMARY_COLOR: '#4185f3' }}>
-      <ProLayout
-        menuFooterRender={() => {
-          return null;
-        }}
-        menuItemRender={() => {
-          return null;
-        }}
-        rightContentRender={() => {
-          return null;
-        }}
-      >
+      {Component.fullPage ? (
         <Component {...pageProps} />
-      </ProLayout>
+      ) : (
+        <ProLayout
+          menuFooterRender={() => {
+            return null;
+          }}
+          menuItemRender={() => {
+            return null;
+          }}
+          rightContentRender={() => {
+            return null;
+          }}
+        >
+          <Component {...pageProps} />
+        </ProLayout>
+      )}
     </ThemeProvider>
   );
 }
